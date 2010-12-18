@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project name="Tuner" default="all">
+<project name="open-guitar" default="all">
 
     <!-- The local.properties file is created and updated by the 'android' tool.
          It contain the path to the SDK. It should *NOT* be checked in in Version
@@ -33,7 +33,7 @@
          This file is an integral part of the build system for your application and
          should be checked in in Version Control Systems. -->
     <property file="default.properties"/>
-
+    
     <!-- Custom Android task to deal with the project target, and import the proper rules.
          This requires ant 1.6.0 or above. -->
     <path id="android.antlibs">
@@ -59,7 +59,7 @@
     -->
     <setup />
     <target name="rename.apk" depends="release">
-	  <move file="./bin/Tuner-release.apk" tofile="./out/production/Tuner/Tuner.apk"/>
+	  <move file="./bin/open-guitar-release.apk" tofile="./out/production/open-guitar/open-guitar.apk"/>
     </target>
 
     <!--<target name="sign" depends="release">-->

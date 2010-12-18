@@ -32,8 +32,8 @@
          by invoking "ant -Dadb.device.arg=-d" for device "ant -Dadb.device.arg=-e" for
          the emulator. -->
     <property name="adb.device.arg" value="" />
-
-    <property name="android.tools.dir" location="C:/android/android-sdk-windows/tools" />
+    <echo message="${sdk-location}"/>
+    <property name="android.tools.dir" location="${sdk-location}/tools" />
     <!-- Name of the application package extracted from manifest file -->
     <xpath input="AndroidManifest.xml" expression="/manifest/@package"
                 output="manifest.package" />
